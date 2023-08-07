@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-img" style="
+  background-image: url('coder.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+"
+>
+    <div
+      class="container m-4">
+      
+       
+      <p class="h3 text-info" >Welcome to Coder.com</p>
+      
+      <p class="h3 text-dark" >Get Started</p>
+      <button type="button"
+        class="btn btn-warning"
+        data-bs-toggle="modal"
+        data-bs-target="#modal">
+      Sign up</button>
+      <div class="modal" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4>Don't have an account</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+              <button type="button" class="btn btn-outline-dark">Sign up with Google</button>
+              </p>
+              <small>--or--</small>
+              <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name">
+              </p>
+              <p>
+              <label for="email">Email:</label>
+              <input type="email" id="email">
+              </p>
+              <p>
+              <label for="password">Password:</label>
+              <input type="password" id="password">
+              </p>
+            </div>
+            <div class="modal-footer">
+              
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-dismiss="modal"
+                data-bs-target="#modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-dismiss="modal"
+                data-bs-target="#modal"
+              >
+                Create
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
